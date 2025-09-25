@@ -1,6 +1,6 @@
 /* DOM - Document Object Model, 
 monitoring the HTML page 
-and modifying/manipulatimg its content at user interaction */
+and modifying/manipulating its content at user interaction */
 document.addEventListener("DOMContentLoaded", () => {
     /* Creating js-nodes for the form and output messages */
     const form = document.getElementById("js-contact-form");
