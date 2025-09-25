@@ -1,0 +1,124 @@
+/* colors stored in variables for reuse */
+:root {
+    --red: #e57373;
+    --green: #81c784;
+    --white: #fefefe;
+    --black: #212121;
+    --gray: #f5f5f5;
+    --hover-green: #66bb6a;
+    --hover-red: #ef5350;
+    --hover-black: #424242;
+}
+
+/* body settings, like bg-color and centered box/content */
+.css-body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray);
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* root-div settings, like box-content-layout inside the box */
+.css-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 2rem;
+    margin: 0 2rem; /* Horizontal margins added */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* section settings, for the width */
+.css-form-section {
+    width: 100%;
+}
+
+/* heading settings, Welcome text */
+.css-heading {
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+/* form settings, layout column */
+.css-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* form settings, layout row */
+.css-form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* label settings, layout row - left part */
+.css-label {
+    flex: 1;
+    margin-right: 1rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* input settings, layout row - right part */
+.css-input {
+    flex: 2;
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* input css effects on hover */
+.css-input:hover {
+    border-color: var(--hover-black);
+    background-color: var(--gray);
+}
+
+/* input css effects on click */
+.css-input:focus {
+    outline: none;
+    border-color: var(--hover-green);
+    background-color: #e8f5e9;
+}
+
+/* button settings, css styling */
+.css-button {
+    padding: 0.75rem;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* button css effects on hover */
+.css-button:hover {
+    background-color: var(--hover-green);
+}
+
+/* button css effects on click */
+.css-button:active {
+    background-color: #4caf50;
+}
+
+/* output settings, css styling for response text after submit */
+.css-response-msg {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--red);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Visitors Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body class="css-body">
+    
+    <div class="css-root">
+
+        <section class="css-form-section">
+
+            <!-- heading -->
+            <h1 class="css-heading">Visitors Registration</h1>
+
+            <!-- form -->
+            <form id="js-contact-form" class="css-form">
+                
+                <!-- row, firstname -->
+                <div class="css-form-group">
+                    <label for="js-firstname" class="css-label">First Name</label>
+                    <input type="text" id="js-firstname" class="css-input" required />
+                </div>
+                
+                <!-- row, surname -->
+                <div class="css-form-group">
+                    <label for="js-surname" class="css-label">Surname</label>
+                    <input type="text" id="js-surname" class="css-input" required />
+                </div>
+                
+                <!-- row, company -->
+                <div class="css-form-group">
+                    <label for="js-company" class="css-label">Company</label>
+                    <input type="text" id="js-company" class="css-input" required />
+                </div>
+                
+                <!-- row, email -->
+                <div class="css-form-group">
+                    <label for="js-email" class="css-label">Email</label>
+                    <input type="email" id="js-email" class="css-input" required />
+                </div>
+                
+                <!-- button -->
+                <button type="submit" id="js-submit-btn" class="css-button">Submit</button>
+                
+            </form>
+            
+            <!-- output/response message -->
+            <p id="js-response-msg" class="css-response-msg"></p>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
