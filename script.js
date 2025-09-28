@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         /* try/catch - error handling */
         try {
             /* Creating a variable for the result(request/response) from the fetch() between the frontend and the backend. fetch() with arguments of bcakend URL and JSON-object (Visitors Submit via HTTP-request POST/Create) */
-            const response = await fetch("https://soloproj-funcapp2b.azurewebsites.net/api/contact", {
+            const response = await fetch("https://soloproj-funcapp2b-d5c2audeevabaqb7.uksouth-01.azurewebsites.net/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
