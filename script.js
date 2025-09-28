@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         /* try/catch - error handling */
         try {
             /* Creating a variable for the result(request/response) from the fetch() between the frontend and the backend. fetch() with arguments of bcakend URL and JSON-object (Visitors Submit via HTTP-request POST/Create) */
-            const response = await fetch("https://soloproj-funcapp2b.azurewebsites.net//api/contact", {
+            const response = await fetch("soloproj-funcapp2b-d5c2audeevabaqb7.uksouth-01.azurewebsites.net/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -45,15 +45,15 @@ document.addEventListener("DOMContentLoaded", () => {
             
             /* API - HTTP response codes - error handling */
             if (response.ok) {
-                responseMsg.textContent = "✅ Registration successful! Thank you.";
+                responseMsg.textContent = "Registration successful! Thank you.";
                 responseMsg.style.color = "#81c784";
                 form.reset();
             } else {
-                responseMsg.textContent = "❌ Submission failed. Please try again.";
+                responseMsg.textContent = "Submission failed. Please try again.";
                 responseMsg.style.color = "#e57373";
             }
         } catch (error) {
-            responseMsg.textContent = "⚠️ An error occurred. Please check your connection.";
+            responseMsg.textContent = "An error occurred. Please check your connection.";
             responseMsg.style.color = "#e57373";
         }
     });
